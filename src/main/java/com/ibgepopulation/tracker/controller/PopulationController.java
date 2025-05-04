@@ -34,7 +34,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping(value = "/api/v1/population")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://fronendtcc-s9yd.vercel.app"})
 @Tag(name = "Population API", description = "API for managing population data")
 @OpenAPIDefinition(info = @Info(title = "Population Management API", version = "1.0", description = "This API provides endpoints for managing population data for different cities.", contact = @Contact(name = "API Support", email = "support@example.com", url = "http://example.com/contact"), license = @License(name = "Apache 2.0", url = "http://www.apache.org/licenses/LICENSE-2.0.html")), servers = {
         @Server(url = "http://localhost:8080", description = "Local server"),
