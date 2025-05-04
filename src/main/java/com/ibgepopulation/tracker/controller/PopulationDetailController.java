@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping(value = "/api/v1/population-detail")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://fronendtcc-s9yd.vercel.app"})
 @RequiredArgsConstructor
 public class PopulationDetailController {
 
